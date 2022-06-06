@@ -64,7 +64,7 @@ jobs:
         file: ./app/Dockerfile
         builder: ${{ steps.buildx.outputs.name }}
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/dataopscicd:${{ github.sha }}, ${{ secrets.DOCKERHUB_USERNAME }}/dataopscicd:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/dataops-cicd:${{ github.sha }}, ${{ secrets.DOCKERHUB_USERNAME }}/dataops-cicd:latest
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
 
