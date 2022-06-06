@@ -29,4 +29,5 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dataops-cicd:${{github.sha}}, ${{ secrets.DOCKERHUB_USERNAME }}/dataops-cicd:latest
           
+          
 
