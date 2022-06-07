@@ -4,8 +4,11 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
-namespace: hello-gitops
+namespace: dataops-cicd-green
 images:
+- name: dataops-cicd
+  newName: prykhno/dataops-cicd
+  newTag: 2eb6a2172b6822eca369e4c34d8238e4447852f4
 - name: hello-gitops
   newName: elisska/hello-gitops
   newTag: 4e396c5a0bfefdf4b9eec601cf3426ffb14fb39e
