@@ -4,8 +4,8 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
-namespace: dataops-cicd-green
+namespace: dataops-cicd-blue
 images:
 - name: dataops-cicd
   newName: prykhno/dataops-cicd
-  newTag: 2eb6a2172b6822eca369e4c34d8238e4447852f4
+  newTag: 2434c569d9446ac5e6aee4cd5cc473c8e9654272
