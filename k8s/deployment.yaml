@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: hello-gitops
-  name: hello-gitops
+    app: dataops-cicd
+  name: dataops-cicd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-gitops
+      app: dataops-cicd
   template:
     metadata:
       labels:
-        app: hello-gitops
+        app: dataops-cicd
     spec:
       containers:
-        - image: hello-gitops
-          name: hello-gitops
+        - image: dataops-cicd
+          name: dataops-cicd
           ports:
             - name: http
               containerPort: 8050
