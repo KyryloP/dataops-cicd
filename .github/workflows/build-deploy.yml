@@ -108,7 +108,7 @@ jobs:
          then
             kubectl create ns dataops-cicd-blue
             cd k8s
-            kustomize edit set namespace python-app-blue
+            kustomize edit set namespace dataops-cicd-blue
             echo "NEW_NAMESPACE=dataops-cicd-blue" >> $GITHUB_ENV
             echo "OLD_NAMESPACE=dataops-cicd-green" >> $GITHUB_ENV
          elif [ $namespacePresentGreen -eq 0 ]
